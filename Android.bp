@@ -1,0 +1,23 @@
+cc_binary {
+    name: "HelloServer",
+    srcs: ["HelloServer.cpp", "IHello.cpp"],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+        "libbinder",
+    ],
+    init_rc: ["HelloServer.rc"],
+}
+
+
+cc_binary {
+    name: "HelloClient",
+    srcs: ["HelloClient.cpp", "IHello.cpp"],
+    shared_libs: [
+        "liblog",
+        "libcutils",
+        "libutils",
+        "libbinder",
+    ],
+}

@@ -1,0 +1,4 @@
+service HelloServer /system/bin/HelloServer
+    class core
+    user system
+    group system
